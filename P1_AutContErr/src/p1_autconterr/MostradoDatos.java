@@ -27,4 +27,13 @@ public class MostradoDatos {
     public void mostrarString(String miString){
         System.out.println(miString);
     }
+    
+    public void mostrarArrayListOfArrayListOfString(ArrayList<ArrayList<String>> miArray){
+        for(int i=0; i<miArray.size();i++){
+            for(int j=0; j<miArray.get(i).size(); j++){
+                System.out.print(miArray.get(j).toString()+"->");
+            }
+            System.out.println("\n");
+        }
+    }
 }

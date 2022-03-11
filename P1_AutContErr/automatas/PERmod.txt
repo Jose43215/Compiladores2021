@@ -1,0 +1,20 @@
+Titulo: Automata para cadenas que inicien con ab, poseean n b's y terminen con c
+10,11,12,13,ER
+13
+10
+a,b,c
+10,a,11
+11,a,ER
+12,a,ER
+13,a,ER
+10,b,ER
+11,b,12
+12,b,12
+13,b,ER
+10,c,ER
+11,c,ER
+12,c,13
+13,c,ER
+ER,a,ER
+ER,b,ER
+ER,c,ER

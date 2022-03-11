@@ -46,15 +46,22 @@ public class CompletarAutomata {
             }
         }
         
+        //baciar enestados 2 el nuevo obtenido
         for (int i = 0; i < estados.size(); i++) {
             estados2.add(estados.get(i));
         }
+        //Agregar el estado ER
         estados2.add("ER");
         
+        //completar transiciones ER
+        for(int i=0; i<alfabeto.size();i++){
+            String[] trans = {"ER",alfabeto.get(i).toString(),"ER"};
+            transiciones2.add(trans);
+        }
         
         
         CompletarAutomata completar = new CompletarAutomata();
-        completar.escribir("P1mod", titulo,estados2,aceptacion, inicio, alfabeto, transiciones2);
+        completar.escribir("PERmod", titulo,estados2,aceptacion, inicio, alfabeto, transiciones2);
     }
     
     public void escribir (String nombre, String titulo, ArrayList estados, ArrayList aceptacion, String inicio, ArrayList alfabeto, ArrayList<String[]> transiciones){

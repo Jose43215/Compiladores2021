@@ -16,7 +16,7 @@ public class P1_AutContErr {
         ObDatos obj = new ObDatos();
         MostradoDatos mostrado = new MostradoDatos();
         CompletarAutomata completado = new CompletarAutomata();
-        
+        Caminos caminos = new Caminos();
         //Proceso
         obj.formulario();
         
@@ -28,6 +28,10 @@ public class P1_AutContErr {
         mostrado.mostrarArrayofArray(obj.transiciones);
         
         completado.completar(obj.titulo,obj.estados,obj.aceptacion,obj.inicio,obj.alfabeto,obj.transiciones);
+        
+        caminos.Datos();
+        caminos.arranque();
+        
     }
     
 }
